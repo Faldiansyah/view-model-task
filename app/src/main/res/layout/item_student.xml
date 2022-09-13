@@ -7,6 +7,7 @@
     android:id="@+id/cardList"
     app:contentPadding="10dp"
     app:cardElevation="5dp">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -14,14 +15,15 @@
             android:id="@+id/tvNama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NAMA"
+            android:text="@string/nama"
             android:textSize="20sp"
             android:textColor="@color/black" />
+
         <TextView
             android:id="@+id/tvNim"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NIM"
+            android:text="@string/nim"
             android:textSize="16sp"
             android:layout_below="@id/tvNama"
             android:layout_marginTop="2dp"/>
@@ -30,8 +32,8 @@
             android:id="@+id/imgStudent"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/data_image" />
 
     </RelativeLayout>
-
 </androidx.cardview.widget.CardView>

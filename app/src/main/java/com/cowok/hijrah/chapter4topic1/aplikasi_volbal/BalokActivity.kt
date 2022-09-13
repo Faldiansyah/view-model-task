@@ -18,11 +18,11 @@ class BalokActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_using_view_model)
+        setContentView(R.layout.activity_balok)
 
         etPanjang = findViewById(R.id.editTextPanjang)
-        etLebar = findViewById(R.id.editTextNumberLebar)
-        etTinggi = findViewById(R.id.editTextNumberTinggi)
+        etLebar = findViewById(R.id.editTextLebar)
+        etTinggi = findViewById(R.id.editTextTinggi)
         btnHitung = findViewById(R.id.buttonHitung)
         tvResult = findViewById(R.id.textViewHasil)
 
@@ -37,7 +37,5 @@ class BalokActivity : AppCompatActivity() {
             viewModel.hitungData(pj, lb, tg)
             tvResult.text = viewModel.hasil.toString()
         }
-
-
     }
 }

@@ -13,9 +13,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        buttonViewModel.setOnClickListener {
-            val pindahActivity = Intent(this, BalokActivity::class.java)
-            startActivity(pindahActivity)
+        buttonBalok.setOnClickListener {
+            val toBalok = Intent(this, BalokActivity::class.java)
+            startActivity(toBalok)
         }
 
         buttonBerita.setOnClickListener {
