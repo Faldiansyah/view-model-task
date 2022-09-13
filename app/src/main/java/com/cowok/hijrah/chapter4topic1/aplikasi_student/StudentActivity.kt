@@ -1,10 +1,11 @@
-package com.cowok.hijrah.chapter4topic1
+package com.cowok.hijrah.chapter4topic1.aplikasi_student
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.cowok.hijrah.chapter4topic1.R
 
 class StudentActivity : AppCompatActivity() {
     lateinit var rvStudent: RecyclerView
@@ -20,7 +21,7 @@ class StudentActivity : AppCompatActivity() {
         studentVM = ViewModelProvider(this).get(StudentViewModel::class.java)
         studentVM.getStudent()
         studentVM.dataListStudent.observe(this, {
-            adapterStudent.setDataStudentAdapter(it as ArrayList<ListStudent>)
+            adapterStudent.setDataStudentAdapter(it as ArrayList<DataStudent>)
         })
     }
 

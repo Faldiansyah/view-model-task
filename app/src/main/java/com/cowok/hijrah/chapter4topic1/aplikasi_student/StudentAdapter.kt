@@ -1,4 +1,4 @@
-package com.cowok.hijrah.chapter4topic1
+package com.cowok.hijrah.chapter4topic1.aplikasi_student
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,11 +7,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.cowok.hijrah.chapter4topic1.R
 
-class StudentAdapter(var listStudent: ArrayList<ListStudent>)
+class StudentAdapter(var listStudent: ArrayList<DataStudent>)
     : RecyclerView.Adapter<StudentAdapter.ViewHolder>() {
 
-    var onClick : ((ListStudent) -> Unit)? = null
+    var onClick : ((DataStudent) -> Unit)? = null
 
     class ViewHolder(view : View): RecyclerView.ViewHolder(view) {
         var namaStudent = view.findViewById<TextView>(R.id.tvNama)
@@ -39,7 +40,7 @@ class StudentAdapter(var listStudent: ArrayList<ListStudent>)
         return listStudent.size
     }
 
-    fun setDataStudentAdapter(studentList: ArrayList<ListStudent>){
+    fun setDataStudentAdapter(studentList: ArrayList<DataStudent>){
         this.listStudent = studentList
     }
 }

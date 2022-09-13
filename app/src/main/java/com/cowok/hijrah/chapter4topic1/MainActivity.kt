@@ -3,6 +3,9 @@ package com.cowok.hijrah.chapter4topic1
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.cowok.hijrah.chapter4topic1.aplikasi_berita.BeritaActivity
+import com.cowok.hijrah.chapter4topic1.aplikasi_student.StudentActivity
+import com.cowok.hijrah.chapter4topic1.aplikasi_volbal.BalokActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -11,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         buttonViewModel.setOnClickListener {
-            val pindahActivity = Intent(this, UsingViewModelActivity::class.java)
+            val pindahActivity = Intent(this, BalokActivity::class.java)
             startActivity(pindahActivity)
         }
 
