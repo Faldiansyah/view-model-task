@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_berita.xml" value="0.1814814814814815" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_student.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_using_view_model.xml" value="0.25" />

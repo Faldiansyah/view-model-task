@@ -14,4 +14,6 @@
     <string name="data_image">Data Image</string>
     <string name="nama">NAMA</string>
     <string name="nim">NIM</string>
+    <string name="nama_jurnalis">Nama Jurnalis</string>
+    <string name="isi_berita">Isi Berita</string>
 </resources>
